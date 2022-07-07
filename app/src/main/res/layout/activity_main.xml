@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFFFD6"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_content"
+        android:layout_width="409dp"
+        android:layout_height="120dp"
+        android:alpha="0.9"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/hokkaidoLogo"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hokkaido_logo" />
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/app_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toEndOf="@+id/hokkaidoLogo"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_content">
+
+        <TextView
+            android:id="@+id/gourmetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:elevation="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/gourmet"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/gourmetButton"
+            app:layout_constraintEnd_toEndOf="@+id/gourmetButton"
+            app:layout_constraintStart_toStartOf="@+id/gourmetButton" />
+
+        <TextView
+            android:id="@+id/cultureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:elevation="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/culture"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cultureButton"
+            app:layout_constraintEnd_toEndOf="@+id/cultureButton"
+            app:layout_constraintStart_toStartOf="@+id/cultureButton" />
+
+        <TextView
+            android:id="@+id/activityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:elevation="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/activity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/activityButton"
+            app:layout_constraintEnd_toEndOf="@+id/activityButton"
+            app:layout_constraintStart_toStartOf="@+id/activityButton" />
+
+        <TextView
+            android:id="@+id/sightSeeingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:elevation="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/sightseeing"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/sightseeingButton"
+            app:layout_constraintEnd_toEndOf="@+id/sightseeingButton"
+            app:layout_constraintStart_toStartOf="@+id/sightseeingButton" />
+
+        <TextView
+            android:id="@+id/othersText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:elevation="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/others"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/othersButton"
+            app:layout_constraintEnd_toEndOf="@+id/othersButton"
+            app:layout_constraintStart_toStartOf="@+id/othersButton" />
+
+        <ImageButton
+            android:id="@+id/gourmetButton"
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.7"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:tint="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hokkaido_food" />
+
+        <ImageButton
+            android:id="@+id/cultureButton"
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.7"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gourmetButton"
+            app:srcCompat="@drawable/hokkaido_culture" />
+
+        <ImageButton
+            android:id="@+id/activityButton"
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.7"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cultureButton"
+            app:srcCompat="@drawable/hokkaido_leisure" />
+
+        <ImageButton
+            android:id="@+id/sightseeingButton"
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.7"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activityButton"
+            app:srcCompat="@drawable/hokkaido_sightseeing" />
+
+        <ImageButton
+            android:id="@+id/othersButton"
+            android:layout_width="360dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.7"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sightseeingButton"
+            app:srcCompat="@drawable/hokkaido_miyage" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

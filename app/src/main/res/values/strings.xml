@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HokkaidoApp</string>
+    <string name="app_title">北海道　ポータルアプリ</string>
+    <string name="gourmet">グルメ</string>
+    <string name="nature">自然</string>
+    <string name="sightseeing">観光地</string>
+    <string name="activity">アクティビティ</string>
+    <string name="culture">文化</string>
+    <string name="others">その他</string>
+</resources>
